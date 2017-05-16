@@ -120,11 +120,6 @@ public abstract class AbstractDao<T> {
         session.delete(entity);
     }
 
-    ////////////////////////////////////////
-    // patch support
-    ////////////////////////////////////////
-    private static final String PATCH_OPERATION_PERFORM_METHOD_NAME = "perform";
-
     /**
      * Return this exception (and HTTP response 409/CONFLICT) if the provided
      * JSON patch was created against a previous version of the object -- an
